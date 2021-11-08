@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication Tables Bases 2-10</title>
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>Select Base: 
+            <select id="baseChoice">
+                <option value="10" selected>10 (standard)</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2 (binary)</option>
+            </select>
+            <button id="baseSubmit">Submit</button>
+        </div>
+        <br>
+        <span id="statement">
+            <span id="question">
+                <span id="fac1">4</span>*<span id="fac2">5</span> = </span>
+                <input id="answer" onclick="select()" type="number">
+                <button id="check">Check</button>
+                <span id="correct">Correct!</span><span id="wrong">Wrong!</span>
+        </span>
+        <br><br>
+        <input type="checkbox" id="hide"><label for="hide" id="hideLabel">Toggle Multiplication Table</label>
+        <table id="table"></table>
+    </body>
+</html>
